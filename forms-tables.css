@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {    /* Resetting general styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {   /* Applying the background header image & it's properties */
+  height: 400px;
+  background-color: #000000;
+  background-image: url('images/cat-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  background-position: 50% 99%;
+  background-attachment: fixed;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header styles */
+h1,
+h2 {
+  text-align:center;
+  padding: 30px 0 10px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+
+/* Table styles */
+table {
+  width: 100%;
+  border: 3px solid #333333;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;  /* Moves the caption to the bottom of table */
+  font-size: 12px;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 1px solid #DDDDDD;
+}
+
+thead {
+  background-color: #ED7D45;
+}
+tbody tr:hover {
+  background-color: #FCFD61;
+}
+
+/* Form styles */
+form {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  padding: 15px 0;
+  margin-top: 15px;
+  border: none;
+}
+
+legend {
+  width: 100%;
+  padding-bottom: 1px;
+}
+
+input,
+label,
+textarea {
+  display: block;
+}
+
+label {
+  padding: 25px 0 10px 0;
+}
+
+fieldset input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  outline: 1px;
+  background-color: #D5F1F1;
+}
+
+::placeholder {   /* Changing the colour of the placeholder text */
+  color: #6D6D6D;
+}
+
+/* Form submit button */
+input[type="submit"] {
+  font-size: 18px;
+  position: relative;
+  padding: 15px;
+  color: #1D1C1C;
+  margin: 0 auto;
+  background-color: #E6AAC0;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 0;
+}
